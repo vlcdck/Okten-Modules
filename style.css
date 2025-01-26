@@ -2,6 +2,9 @@
     width: 1250px;
     margin: 0 auto;
 }
+body {
+    padding-top: 86px;
+}
 
 
 /*----------------------------- header --------------------*/
@@ -81,9 +84,77 @@ header {
     gap: 10px;
 }
 
-.search-btn a{
+.search-btn a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+/*------------------------------ main ---------------------*/
+
+/*------------------------- greeting-part --------------------*/
+
+.greeting-part {
+    background: #EFF0F3;
+}
+
+.greeting-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding-top: 164px;*/
+    height: 900px;
+}
+
+.greeting-title h1{
+    width: 617px;
+    color: #2B2C34;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.greeting-title p {
+    width: 653px;
+    color: #9A9494;
+    font-size: 20px;
+    font-weight: 400;
+    border-left: 3px solid #2B2C34;
+    padding-left: 12px;
+    margin: 30px 0 30px;
+}
+
+.greeting-inp-btn-row {
+    display: flex;
+    gap: 20px;
+}
+
+.greeting-title input{
+    padding: 21px 200px 21px 25px;
+    width: 444px;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #FFFFFE;
+}
+.greeting-title input::placeholder {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.greeting-title button {
+    width: 145px;
+    height: 67px;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #6246EA;
+    color: #FFFFFE;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
 }
