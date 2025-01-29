@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
 }
 
-.header-logo {
+.logo {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -36,13 +36,13 @@ header {
 
 }
 
-.header-logo > h3 {
+.logo h3 {
     color: #001858;
     font-size: 36px;
     font-weight: 600;
 }
 
-.header-logo > p {
+.logo p {
     color: #6246EA;
     font-size: 18px;
     font-weight: 700;
@@ -131,7 +131,7 @@ header {
     gap: 20px;
 }
 
-.greeting-title input {
+.greeting-inp-btn-row input {
     padding: 21px 200px 21px 25px;
     width: 444px;
     align-items: center;
@@ -141,13 +141,13 @@ header {
     background: #FFFFFE;
 }
 
-.greeting-title input::placeholder {
+.greeting-inp-btn-row input::placeholder {
     color: #C0C0C0;
     font-size: 20px;
     font-weight: 400;
 }
 
-.greeting-title button {
+.btn {
     width: 145px;
     height: 67px;
     padding: 20px 23px 19px 23px;
@@ -266,9 +266,8 @@ header {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 30px;
     width: 300px;
     height: 425px;
     padding: 20px;
@@ -283,11 +282,12 @@ header {
 }
 
 .targeted-card > .img-title > h4 {
+    height: 75px;
     color: #2B2C34;
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 25px 0 25px;
+    margin-top: 25px;
 }
 
 .card-user-info {
@@ -309,4 +309,102 @@ header {
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wrapper .btn {
+    width: 165px;
+    height: 64px;
+}
+
+/*----------------------- subscribe-form ------------------*/
+
+.subscribe-section {
+    background: #EFF0F3;
+    padding: 58px 0;
+}
+
+.subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subscribe-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*---------------------------------- footer -----------------------------*/
+
+footer {
+    background: #E4E5E9;
+    height: 435px;
+}
+
+.footer-links {
+    padding: 70px 0 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-left .logo {
+    justify-content: flex-start;
+    padding: 0;
+}
+.content-left > p{
+    width: 284px;
+    color: #2B2C34;
+    font-size: 18px;
+    font-weight: 400;
+}
+.content-left .socials {
+    display: flex;
+    gap: 30px;
+}
+.content-left .socials img {
+    height: 24px;
+    width: 24px;
+}
+
+.content-right {
+    display: flex;
+    gap: 95px;
+}
+.content-right h5{
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.content-right li{
+    margin-bottom: 20px;
+}
+
+footer hr{
+    width: 1250px;
+    height: 1px;
+    background: #C0C0C0;
+}
+.copyright p {
+    color: #2B2C34;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 26px;
 }
