@@ -1,0 +1,20 @@
+.post-list > ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments-wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.comments-wrapper > div {
+    width: 360px;
+    border: 1px solid;
+}
