@@ -21,6 +21,7 @@
 // блоки з короткою іфною про post - в ряд по 5 .
 // post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
 // Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
+
 const url = new URL('https://jsonplaceholder.typicode.com/users');
 
 async function parseUsers() {
@@ -40,7 +41,6 @@ async function parseUsers() {
                 <a href="user-details.html?id=${userObject.id}"><button>More Info</button></a>`
                 usersContainer.appendChild(userBlock);
             }
-            document.body.appendChild(usersContainer);
         });
 }
 

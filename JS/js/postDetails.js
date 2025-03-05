@@ -45,6 +45,12 @@ async function parsePostsInfo() {
 
                 listDiv.appendChild(ul);
 
+                const backButton = document.createElement('button');
+                backButton.innerHTML = `
+                    <a href="index.html">Return to Users</a>
+                  `;
+                listDiv.appendChild(backButton);
+
             }
 
             createList(post)
@@ -68,9 +74,9 @@ async function parsePostsInfo() {
                     commentsWrapper.appendChild(commentBlock);
                 }
             }
+
             createComments(postComments);
         })
     listDiv.appendChild(commentsWrapper);
 }
-
 parsePostsInfo();

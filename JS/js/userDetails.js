@@ -74,7 +74,15 @@ async function parseUsersInfo() {
                         wrapper.appendChild(postsContainer);
                     }
                 })
+
+                const backButton = document.createElement('button');
+                backButton.innerHTML = `
+                    <a href="index.html">Go Back</a>
+                  `;
+
                 wrapper.appendChild(button);
+                wrapper.appendChild(backButton);
+
             }
 
             showPostTitle();
